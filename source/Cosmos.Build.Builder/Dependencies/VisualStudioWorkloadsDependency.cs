@@ -36,7 +36,7 @@ namespace Cosmos.Build.Builder.Dependencies
         public async Task InstallAsync(CancellationToken cancellationToken)
         {
             var vsInstallerPath = Environment.ExpandEnvironmentVariables(
-                @"%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vs_installershell.exe");
+                @"%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vs_installer.exe");
 
             var vsInstancePath = _visualStudioInstance.GetInstallationPath();
             var installedPackages = _visualStudioInstance.GetPackages();
